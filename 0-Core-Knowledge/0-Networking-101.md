@@ -12,6 +12,9 @@
 5. TCP, UDP and 3-Way-Handshake
 6. Ports & Protocols
 7. OSI Model
+8. TCP/IP protocols - FTP, TFTP, SMTP, SNMP, DNS, USer process, ICMP, BGP, IGMP, ARP, RARP
+9. Routing protocols
+10. 
 
 # 1. Introduction
 
@@ -307,6 +310,12 @@ TCP enables data to be transferred between applications and devices on a network
 TCP means Transmission Control Protocol, which is a communications standard for delivering data and messages through networks. TCP is a basic standard that defines the rules of the internet and is a common protocol used to deliver data in digital network communications.
 
 - The TCP/IP model consists of several types of protocols, including:
+- Used as a standard, bridge the gap between non-compatible platforms.
+- Data sent from one node to another as a sequence of datagrams
+- Datagrams are sent from one node to another independently from one node to another.
+- TCP/IP does not strictly follow the OSI model
+- It follows a simplified 4-layer model
+- Consist of four layer - Host to host layer combined as application layer(RUn on top of layers 1,2,3), Transport (End to end message transfer), Network(Packet deleivery across internet), Datalink(Frame transmission over link).
    - TCP and IP
    - Address Resolution Protocol (ARP)
    - Internet Control Message Protocol (ICMP)
