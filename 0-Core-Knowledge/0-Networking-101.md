@@ -478,3 +478,129 @@ There also involves some security postures and mechanisms that a security profes
 - Network, Datalink, Physical = POint to point
 - In a communication event the Host to host layer will exist in start and end node only
 - Point to point layers are involved in intermediate communication between start and destination node.
+
+```
+FTP (File Transfer Protocol):
+
+    Definition: A protocol for transferring files between systems.
+    Use: Uploading/downloading files.
+    Working: Establishes a connection using TCP, sends commands and data over separate channels.
+    Limitation: Not secure; data is transmitted in plaintext.
+    Example: Uploading a website to a web server.
+
+TFTP (Trivial File Transfer Protocol):
+
+    Definition: A simpler, less secure file transfer protocol.
+    Use: Booting diskless workstations.
+    Working: Uses UDP for quick, low-overhead file transfers.
+    Limitation: Lacks security and functionality.
+    Example: Transferring firmware updates to network devices.
+
+SMTP (Simple Mail Transfer Protocol):
+
+    Definition: A protocol for email transmission.
+    Use: Sending emails.
+    Working: Uses TCP to transfer messages from client to server and between servers.
+    Limitation: Can be intercepted if not encrypted.
+    Example: Sending an email from Outlook.
+
+SNMP (Simple Network Management Protocol):
+
+    Definition: A protocol for managing devices on IP networks.
+    Use: Network management and monitoring.
+    Working: Uses a hierarchical structure with agents and managers to exchange management information.
+    Limitation: Vulnerable to attacks if not secured.
+    Example: Monitoring router performance.
+
+DNS (Domain Name System):
+
+    Definition: Translates domain names to IP addresses.
+    Use: Resolving website addresses.
+    Working: Uses a hierarchical structure of servers to resolve queries.
+    Limitation: Can be targeted by DNS spoofing attacks.
+    Example: Translating www.example.com to 93.184.216.34.
+
+ICMP (Internet Control Message Protocol):
+
+    Definition: Used for diagnostic and error messages.
+    Use: Network troubleshooting (e.g., ping).
+    Working: Sends error messages and operational information about network conditions.
+    Limitation: Can be used in network attacks (e.g., ping flood).
+    Example: Pinging a server to check connectivity.
+
+BGP (Border Gateway Protocol):
+
+    Definition: Protocol for routing data between autonomous systems on the internet.
+    Use: Managing large-scale routing.
+    Working: Exchanges routing information and selects the best path based on attributes like AS path.
+    Limitation: Can be complex and susceptible to routing attacks.
+    Example: Internet service providers exchanging routing information.
+
+IGMP (Internet Group Management Protocol):
+
+    Definition: Manages multicast group memberships.
+    Use: Streaming video to multiple users.
+    Working: Allows routers to learn which devices want to receive multicast traffic.
+    Limitation: Can add overhead to network traffic.
+    Example: Streaming live sports to multiple users.
+
+ARP (Address Resolution Protocol):
+
+    Definition: Maps IP addresses to MAC addresses.
+    Use: Enabling IP-to-MAC address translation.
+    Working: Sends a broadcast request to find the MAC address associated with an IP address.
+    Limitation: Vulnerable to ARP spoofing attacks.
+    Example: A device determining the MAC address of another device on the same local network.
+
+RARP (Reverse Address Resolution Protocol):
+
+    Definition: Maps MAC addresses to IP addresses.
+    Use: Booting diskless workstations.
+    Working: Sends a request to a RARP server to obtain an IP address.
+    Limitation: Largely obsolete, replaced by DHCP.
+    Example: Early network booting scenarios.
+
+9. Routing Protocols
+
+Definition: Routing protocols determine the best path for data to travel across networks.
+
+Types:
+
+    Interior Gateway Protocols (IGP): Used within an autonomous system (e.g., OSPF, EIGRP).
+    Exterior Gateway Protocols (EGP): Used between autonomous systems (e.g., BGP).
+
+Use: Ensures efficient data delivery between networks.
+
+Working:
+
+    Distance Vector Routing: Uses distance (hop count) to determine the best path (e.g., RIP).
+    Link State Routing: Uses the state of each link to calculate the shortest path (e.g., OSPF).
+    Path Vector Routing: Maintains the path information that gets updated dynamically (e.g., BGP).
+
+Limitation: Can be complex to configure and manage.
+
+Real World Example: OSPF (Open Shortest Path First) used in large enterprise networks.
+Additional Concepts for Aspiring Ethical Hackers
+
+    Network Security:
+        Definition: Measures to protect data during transmission.
+        Use: Prevent unauthorized access and attacks.
+        Example: Implementing firewalls and encryption.
+
+    Penetration Testing:
+        Definition: Simulated cyber attack to test network defenses.
+        Use: Identify vulnerabilities.
+        Example: Using tools like Metasploit.
+
+    Cryptography:
+        Definition: Techniques for secure communication.
+        Use: Protect data integrity and confidentiality.
+        Example: Using SSL/TLS for secure web transactions.
+
+    Wi-Fi Security:
+        Definition: Protecting wireless networks from attacks.
+        Use: Ensure safe wireless communication.
+        Example: Implementing WPA3 encryption.
+
+By understanding these concepts, you can build a solid foundation in networking, crucial for your journey as an ethical hacker.
+```
