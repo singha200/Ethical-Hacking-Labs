@@ -6,11 +6,12 @@
 
 ### **This module follows the order:**
 1. Introduction
-2. IP and MAC Addresses
-3. Subnetting
-4. TCP, UDP and 3-Way-Handshake
-5. Ports & Protocols
-6. OSI Model
+2. Switching
+3. IP and MAC Addresses
+4. Subnetting
+5. TCP, UDP and 3-Way-Handshake
+6. Ports & Protocols
+7. OSI Model
 
 # 1. Introduction
 
@@ -88,6 +89,18 @@ If you're using the TCP/IP stack and making your own LAN or WAN = Intranet.
 * **Dynamic host configuration protocol (DHCP)**: assigns dynamic IP addresses to hosts and is maintained by the internet service provider.
 
 * **Internet service providers (ISP)**: companies that provide everyone with their internet connection, both to individuals and to businesses and other organizations.
+
+# 2. Switching
+## Data communication over a network - Circuit or Packet Switching (Two approaches)
+- **Circuit Switching ** - A dedicated comminucation path is established between two stations. The path follows a fixed sequence of intermediate links.
+- A logical channel gets defined on each physical link. Dedicated to the connection.
+- Steps - Connection establishment -> Data transfer -> Connection termination
+- Drawback - Channel capacity is dedicated, There is initial delay
+
+- **Packet switching** - Data link are shared, data are transmitted in short packets(kbs), A longer message is broken up into smaller chunks. The chunks are called packets. every packet conatins a header. Based on store and formward concept. Each intermediate node (router) maintain a routing table.
+
+
+
 
 # 2. IP & MAC Address
 ## What is an IP Address (Internet Protocol)?
